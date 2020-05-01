@@ -9,15 +9,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <meta name="Description" content="Diff tools" />
         <title>{pkg.title}</title>
+        <meta name="Description" content="Diff tools" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="apple-mobile-web-app-title" content="" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="noindex"/>
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta
           name="msapplication-TileImage"
