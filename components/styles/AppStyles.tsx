@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
 export const AppStyles = styled.div.attrs({
-  className: 'w-full h-screen bg-gray-100 p-2',
+  className: 'w-full h-screen bg-white p-2',
 })``
