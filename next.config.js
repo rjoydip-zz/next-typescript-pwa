@@ -1,8 +1,5 @@
+const composePlugins = require('next-compose-plugins')
 const plugins = []
-const nextConfig = {
-  webpack: (config) => {
-    return config
-  },
-}
+const nextConfig = {}
 
-module.exports = require('next-compose-plugins')([...plugins], nextConfig)
+module.exports = composePlugins([...plugins], nextConfig)

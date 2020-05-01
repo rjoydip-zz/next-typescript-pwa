@@ -1,37 +1,31 @@
-
 import React, { useEffect } from 'react'
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  color: red;
-  font-size: 30px;
-`
+import { AppStyles, Title } from '../components/styles'
 
 export default () => {
   useEffect(() => {
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker
-        .register('/sw.js')
-        .then((_) => {
-          console.log('service worker registration successful')
-        })
-        .catch((err) => {
-          console.warn('service worker registration failed', err.message)
-        })
+    if (process.env.NODE_ENV === 'production') {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then((_) => {
+            console.log('service worker registration successful')
+          })
+          .catch((err) => {
+            console.warn('service worker registration failed', err.message)
+          })
+      }
     }
   }, [])
 
   return (
-    <div className="container">
+    <AppStyles>
       <main>
         <Title>
           Welcome to <a href="https://nextjs.org">Next Typescript PWA!</a>
         </Title>
-
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
-
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>Documentation &rarr;</h3>
@@ -69,7 +63,7 @@ export default () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '} rjoydip
+          Powered by rjoydip
         </a>
       </footer>
 
@@ -218,6 +212,6 @@ export default () => {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </AppStyles>
   )
 }
