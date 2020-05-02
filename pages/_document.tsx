@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <Html lang="en" className="bg-inverse">
+      <Html lang="en">
         <Head />
         <body>
           <Main />

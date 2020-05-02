@@ -5,7 +5,8 @@ const plugins = [
       './pages/**/*.{js,jsx,ts,tsx,css}',
       './components/**/*.{js,jsx,ts,tsx,css}',
       '*.{js,jsx,ts,tsx,css}',
-    ],
+      './utils/prefers-dark.ts',
+    ]
   }),
 ]
 const nextConfig = {}
