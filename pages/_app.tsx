@@ -41,6 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <noscript key="noscript">Your browser does not support JavaScript!</noscript>
       </Head>
       <Component {...styles} {...pageProps} />
     </>
