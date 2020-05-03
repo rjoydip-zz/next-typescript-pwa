@@ -3,13 +3,13 @@ import * as colors from '../utils/colors'
 const light = {
   bg: colors.white,
   text: colors.black,
-  link: colors.teal[400],
+  link: colors.teal[700],
 }
 
 const dark = {
   bg: colors.black,
   text: colors.white,
-  link: colors.orange[400],
+  link: colors.orange[700],
 }
 
 const defaultTheme = {}

@@ -10,7 +10,8 @@
     "start": "next start",
     "pre-deploy": "yarn clean-cache && yarn build-css && yarn lint && yarn build",
     "clean-cache": "rm -rf .next && rm -rf node_modules/.cache",
-    "build-css": "postcss tailwind.css -o index.css"
+    "build-css": "postcss tailwind.css -o index.css",
+    "watch-css": "postcss tailwind.css -o index.css -w"
   },
   "dependencies": {
     "next": "latest",

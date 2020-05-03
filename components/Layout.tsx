@@ -26,6 +26,7 @@ export const GlobalStyles = createGlobalStyle`
 
 const ThemeChange = ({ themeType = 'light', toggleTheme = () => {} }) => (
   <button
+    aria-label="Dark mode"
     className="absolute right-0 m-2 focus:outline-none rounded-full inline-flex items-center"
     onClick={toggleTheme}
   >
