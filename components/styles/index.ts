@@ -5,7 +5,7 @@ export const Link = styled.a.attrs({})`
 `
 
 export const Paragraph = styled.p.attrs({
-    className: 'text-md m-2'
+  className: 'text-lg m-2',
 })``
 
 export const Title = styled.div.attrs({
